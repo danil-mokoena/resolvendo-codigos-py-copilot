@@ -97,3 +97,79 @@ print(f"As informações concatenadas são: {info1} {info2}")
 O resultado será o mesmo, mas o código fica mais limpo e legível.
 
 # 2 - Repetindo Textos ✏️
+Descrição do desafio: Agora vamos solicitar uma string e um número inteiro como entrada. Depois teremos que retornar a string repetida o número de vezes informado.
+
+## 2.1 O desafio
+Para este desafio, iremos criar um texto que repete X vezes a string definida pelo usuário. O código para a definição da string que será repetida é:
+```
+string = input("Digite uma string: ")
+```
+
+Também criaremos um prompt para que o usuário decida quantas vezes ele deseja que o código seja repetido, com o input:
+```
+numero = int(input("Digite um número inteiro: "))
+```
+
+A impressão será feita através do código:
+```
+print((string + " ") * numero)
+```
+
+Desta forma, o código final que teremos, será:
+```
+# Agora vamos solicitar uma string e um número inteiro como entrada.
+# Depois, teremos que repetir a string o número de vezes indicado pelo usuário.
+
+# Entrada de dados
+string = input("Digite uma string: ")
+numero = int(input("Digite um número inteiro: "))
+
+# Impressão do resultado com espaço entre as repetições
+print((string + " ") * numero)
+```
+
+## 2.2 Explicação passo a passo
+🔹 2.2.1. Entrada de dados (String)
+```
+string = input("Digite uma string: ")
+```
+
+`input()` → exibe a mensagem na tela e espera que o usuário digite algo.<br>
+Tudo que o usuário digita é armazenado como string (texto). <br>
+Aqui, a variável string guarda esse texto.
+
+🧩 Exemplo:
+Usuário digita → `"Oi"`
+Agora string = `"Oi"`
+
+🔹 2.2.2. Entrada de dados (número inteiro)
+```
+numero = int(input("Digite um número inteiro: "))
+```
+`input()` → pede ao usuário que digite algo.<br>
+`int()` → converte o valor digitado em número inteiro, pois o `input()` retorna sempre texto.<br>
+A variável numero guarda esse valor como número.<br>
+<br>
+🧩 Exemplo:<br>
+Usuário digita → `3`<br>
+Agora numero = `3`<br>
+<br>
+🔹 2.2.3. Impressão do resultado com repetição<br>
+```print((string + " ") * numero)```<br>
+`(string + " ")` → adiciona um espaço ao final da string, para separar as repetições.<br>
+`* numero` → repete o conteúdo `(string + " ")` o número de vezes informado pelo usuário.<br>
+`print()` → exibe o resultado na tela.<br>
+<br>
+🧩 Exemplo:<br>
+string = "Oi"<br>
+numero = 3<br>
+(string + " ") * numero → "Oi " * 3 → "Oi Oi Oi "<br>
+<br>
+Resultado exibido:<br>
+Oi Oi Oi <br>
+<br>
+🔹 2.2.4. Observação<br>
+Se você usasse apenas `string * numero`, o resultado sairia sem espaços, ficando "OiOiOi".<br>
+Por isso, adicionamos o `" "` dentro dos parênteses para separar as repetições.<br>
+O espaço extra no final pode ser removido com `.strip()`, se quiser:<br>
+`print(((string + " ") * numero).strip())`
