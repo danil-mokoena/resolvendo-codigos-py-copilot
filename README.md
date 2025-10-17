@@ -1,9 +1,9 @@
 # resolvendo-codigos-py-copilot
-Bem-vindo ao meu repositório para o projeto: Resolvendo Códigos em Python da plataforma DIO utilizando, como ferramenta de explicação para os comandos utilizados, a plataforma Github Co-Pilot ou outra AI similar.
+Bem-vindo ao meu repositório para o projeto: Resolvendo Códigos em Python da plataforma DIO utilizando, caso seja necessário, a plataforma Github Co-Pilot ou outra AI similar.
 
-O projeto consiste em criar 5 arquivos em Python, cada qual com operações diferentes, para colocar em prática nossos conhecimentos em linguagem e lógica de programação, além de avaliar a assistência dada pelas AIs para codificação.
+O projeto consiste em criar 5 arquivos em Python, cada qual com operações diferentes, para colocar em prática nossos conhecimentos em linguagem e lógica de programação, além de avaliar a assistência dada pelas AIs para codificação, quando aplicável e se necessária.
 
-# 1 - Concatenando Dados
+# 1 - Concatenando Dados 🐾
 Descrição do desafio: Vamos receber dois dados diferentes do usuário e concatena-los em uma única string.
 
 ## 1.1 - O Desafio
@@ -95,3 +95,5 @@ print(f"As informações concatenadas são: {info1} {info2}")
 `f-strings` permitem escrever o texto e inserir variáveis diretamente dentro das chaves `{}`.
 
 O resultado será o mesmo, mas o código fica mais limpo e legível.
+
+# 2 - Repetindo Textos ✏️
