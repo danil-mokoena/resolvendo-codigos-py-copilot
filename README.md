@@ -447,3 +447,75 @@ print(f"A média das notas é: {media:.2f}")
 
 Saída:<br>
 A média das notas é: 8.17
+
+# 6 - Verificando Palíndromos 🔄
+Descrição do desafio: Vamos testar se uma palavra é um palíndromo?! Uma dica é: Utilize conceitos de manipulação de strings para inverter a palavra e comparar com a original.
+
+#6.1 - O desafio:
+O desafio deste exercício consiste em criar um código para verificar se uma palavra é, ou não, um palíndromo.
+
+```
+# Programa para verificar se uma palavra é um palíndromo
+
+# Entrada de dados
+palavra = input("Digite uma palavra: ")
+```
+Este input nos dará a nossa palavra.
+
+```
+# Processamento — inverter a string
+palavra_invertida = palavra[::-1]
+```
+Código que nos dará a palavra invertida.
+
+```
+# Comparação entre a palavra original e a invertida
+if palavra.lower() == palavra_invertida.lower():
+    print("A palavra é um palíndromo!")
+else:
+    print("A palavra não é um palíndromo.")
+```
+Código para verificação entre as duas palavras.
+
+# 6.2 🧠 Explicação passo a passo
+🔹 6.2.1. Entrada de dados
+```
+palavra = input("Digite uma palavra: ")
+```
+`input()` → solicita que o usuário digite uma palavra.<br>
+O valor digitado é armazenado na variável palavra.
+
+🔹 6.2.2. Inversão da string
+```
+palavra_invertida = palavra[::-1]
+```
+Em Python, o operador de fatiamento `([:])` permite manipular partes da string.
+O `[::-1]` indica que queremos percorrer a string de trás para frente, ou seja, criar uma versão invertida da palavra.
+
+💡 Exemplo:<br>
+palavra = "arara"<br>
+palavra_invertida = "arara"
+
+🔹 6.2.3. Comparação entre as duas versões
+```
+if palavra.lower() == palavra_invertida.lower():
+```
+Usamos `.lower()` para transformar ambas em minúsculas, evitando erros com letras maiúsculas.<br>
+Se forem iguais, a palavra é um palíndromo.
+
+🔹 6.2.4. Saída (resultado)
+```
+print("A palavra é um palíndromo!")
+```
+ou
+```
+print("A palavra não é um palíndromo.")
+```
+O programa exibe o resultado com base na comparação feita.
+
+💡 Exemplo de execução<br>
+Digite uma palavra: Radar<br>
+A palavra é um palíndromo!
+
+Digite uma palavra: Python<br>
+A palavra não é um palíndromo.
